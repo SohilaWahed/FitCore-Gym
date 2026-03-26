@@ -1,0 +1,510 @@
+/* Main */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --font-family-base: "Roboto", sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --padding-block: 80px;
+    --dark-background-color: #101828;
+    --secondary-background-color: #F9FAFB;
+    --main--text-color: #101828;
+    --secondary--text-color: #4a5565;
+    --third-text-color: #364153;
+    --footer-text-color: #99a1af;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-regular);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--font-weight-bold);
+    color: var(--main--text-color);
+}
+
+p {
+    font-weight: var(--font-weight-regular);
+    color: var(--secondary--text-color);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+/* hero section */
+
+.hero {
+    padding-block: var(--padding-block);
+}
+
+.hero .content,
+.hero .image {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hero .content {
+    width: 50%;
+}
+
+.hero .content h1 {
+    width: 450px;
+    font-size: 60px;
+    line-height: 75px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.hero .content p {
+    font-size: 20px;
+    line-height: 33px;
+}
+
+.hero .content .btns button {
+    margin-inline-end: 15px;
+    padding-inline: 30px;
+    padding-block: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: var(--font-weight-medium);
+    line-height: 28px;
+    border: none;
+}
+
+.hero .content .btns .journey {
+    background-color: black;
+    color: white;
+}
+
+.hero .content .btns .learn {
+    border: 1px solid gray;
+    color: var(--third-text-color);
+
+}
+
+.hero .image {
+    width: 48%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.hero .image img {
+    width: 65%;
+    border-radius: 20px;
+}
+
+/* titles of sections  */
+
+.why-choose-us .title,
+.our-members .title,
+.join .title {
+    text-align: center;
+}
+
+.why-choose-us .title h2,
+.our-members .title h2,
+.join .title h2 {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.why-choose-us .title p,
+.our-members .title p,
+.join .title p {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+/* why choose us section*/
+
+.why-choose-us {
+    padding-bottom: 30px;
+}
+
+.why-choose-us .cards {
+    padding-block: 50px;
+}
+
+.why-choose-us .cards .card {
+    width: 32%;
+    /* until use flex */
+    height: 270px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px;
+    float: left;
+}
+
+.why-choose-us .cards .card .square {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.why-choose-us .cards .card .square .inner {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 16px;
+}
+
+.why-choose-us .cards .card.one {
+    background-color: #DBEAFE;
+    border: 1px solid #bedbff;
+}
+
+.why-choose-us .cards .card.one .square {
+    background-color: #155DFC;
+}
+
+.why-choose-us .cards .card.two {
+    background-color: #D0FAE5;
+    border: 1px solid #a4f4cf;
+    margin: 0 2%;
+}
+
+.why-choose-us .cards .card.two .square {
+    background-color: #009966;
+}
+
+.why-choose-us .cards .card.two .inner {
+    border-radius: 50%;
+}
+
+.why-choose-us .cards .card.three {
+    background-color: #F3E8FF;
+    border: 1px solid #e9d4ff;
+}
+
+.why-choose-us .cards .card.three .square {
+    background-color: #9810FA;
+}
+
+.why-choose-us .card .content h3 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.why-choose-us .card .content p {
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.why-choose-us .feature .image {
+    float: left;
+    width: 45%;
+}
+
+.why-choose-us .feature .image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.why-choose-us .feature .content {
+    float: right;
+    width: 45%;
+}
+
+.why-choose-us .feature .content h3 {
+    margin-top: 0;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.why-choose-us .feature .content .feat {
+    border-left: 4px solid var(--main--text-color);
+    padding-left: 20px;
+}
+
+.why-choose-us .feature .content .feat h4 {
+    margin-bottom: 0;
+    font-weight: var(--font-weight-semibold);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.why-choose-us .feature .content .feat p {
+    margin-top: 10px;
+    color: var(--secondary--text-color);
+}
+
+/* our members section */
+
+.our-members {
+    background-color: var(--secondary-background-color);
+    padding-block: var(--padding-block);
+}
+
+.our-members .cards .card {
+    padding: 30px;
+    border-radius: 15px;
+    float: left;
+    width: 32%;
+    height: 250px;
+}
+
+.our-members .cards .card.one {
+    background-color: #EFF6FF;
+    border: 1px solid #bedbff;
+}
+
+.our-members .cards .card.two {
+    margin: 0 2%;
+    background-color: #ecfdf5;
+    border: 1px solid #a4f4cf;
+}
+
+.our-members .cards .card.three {
+    background-color: #faf5ff;
+    border: 1px solid #e9d4ff;
+}
+
+.our-members .cards .card .header .image {
+    width: 70px;
+    height: 70px;
+    margin-inline-end: 20px;
+    border-radius: 50%;
+    float: left;
+}
+
+.our-members .cards .card .header .image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.our-members .cards .card .header .data {
+    float: left;
+}
+
+.our-members .cards .card .header .data h3 {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 10px 0 0 0;
+}
+
+.our-members .cards .card .header .data p {
+    margin-block: 0;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.our-members .cards .card p {
+    line-height: 26px;
+}
+
+.our-members .statistic {
+    background-color: #F1F5F9;
+    border-radius: 15px;
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+}
+
+.our-members .statistic div {
+    width: 25%;
+    float: left;
+}
+
+.our-members .statistic div h3 {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+
+.our-members .statistic div p {
+    line-height: 24px;
+}
+
+/* join section  */
+
+.join {
+    padding-block: var(--padding-block);
+}
+
+.join .title p {
+    width: 55%;
+    margin: auto;
+}
+
+.join .form {
+    width: 75%;
+    background-color: var(--secondary-background-color);
+    padding: 50px;
+    border-radius: 15px;
+    margin: 40px auto;
+}
+
+.join label {
+    font-weight: var(--font-weight-medium);
+    color: var(--third-text-color);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.join input,
+.join select,
+.join textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    margin-block: 15px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.join .first-name {
+    float: left;
+    width: 49%;
+}
+
+.join .last-name {
+    float: right;
+    width: 49%;
+}
+
+.join button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: var(--font-weight-medium);
+    line-height: 28px;
+    margin-block: 15px;
+}
+
+.join .by-submit {
+    color: var(--secondary--text-color);
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* footer */
+footer {
+    background-color: #101828;
+    padding-block: var(--padding-block);
+}
+
+footer p,
+footer span,
+footer a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+}
+
+footer h2,
+footer h3,
+footer h4 {
+    margin-top: 0;
+    color: white;
+}
+
+footer .left-content {
+    width: 49%;
+    float: left;
+}
+
+footer .left-content h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+footer .left-content p {
+    font-size: 18px;
+    line-height: 29px;
+}
+
+footer .left-content a {
+    line-height: 24px;
+    margin-inline-end: 15px;
+}
+
+footer .right-content {
+    width: 49%;
+    float: right;
+}
+
+footer .right-content h3 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: var(--font-weight-semibold);
+}
+
+footer .right-content h4 {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--font-weight-medium);
+}
+
+footer .right-content .quik {
+    width: 49%;
+    float: left;
+}
+
+footer .right-content .quik ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer .right-content .quik ul li {
+    margin-block: 15px;
+}
+
+footer .right-content .contact {
+    width: 49%;
+    float: right;
+}
+
+footer .copy {
+    color: #6a7282;
+    border-top: 1px solid #232C3D;
+    padding-top: 20px;
+}
+
+footer .copy p {
+    /* 34an rule fok direct 3la p lhn hena inherent mn copy fmsh ht4t8l ela kda */
+     color: #6a7282;
+    float: left;
+    width: auto;
+}
+
+footer .copy .policy {
+    float: right;
+    margin-top: 16px;
+}
+
+footer .copy .policy span {
+     color: #6a7282; 
+    margin-inline-end: 15px;
+    font-size: 14px;
+    line-height: 20px;
+}
