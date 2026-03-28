@@ -1,5 +1,6 @@
 /* Main */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --font-family-base: "Roboto", sans-serif;
@@ -7,7 +8,9 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --padding-block: 80px;
+    --padding-block: 40px;
+    --padding-block-md: 60px;
+    --padding-block-lg: 80px;
     --dark-background-color: #101828;
     --secondary-background-color: #F9FAFB;
     --main--text-color: #101828;
@@ -42,6 +45,10 @@ p {
     color: var(--secondary--text-color);
 }
 
+button {
+    cursor: pointer;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -51,10 +58,10 @@ p {
     clear: both;
 }
 
-/* hero section */
+/* Hero section */
 
 .hero {
-    padding-block: var(--padding-block);
+    padding-block: var(--padding-block-lg);
 }
 
 .hero .content,
@@ -65,6 +72,7 @@ p {
 
 .hero .content {
     width: 50%;
+    margin-inline-end: 4%;
 }
 
 .hero .content h1 {
@@ -103,17 +111,18 @@ p {
 }
 
 .hero .image {
-    width: 48%;
+    width: 45%;
     border-radius: 20px;
     text-align: center;
 }
 
 .hero .image img {
-    width: 65%;
+    width: 360px;
+    height: 360px;
     border-radius: 20px;
 }
 
-/* titles of sections  */
+/* Titles Of Sections  */
 
 .why-choose-us .title,
 .our-members .title,
@@ -135,14 +144,14 @@ p {
     line-height: 28px;
 }
 
-/* why choose us section*/
+/* Why Choose Us Section */
 
 .why-choose-us {
     padding-bottom: 30px;
 }
 
 .why-choose-us .cards {
-    padding-block: 50px;
+    padding-block: var(--padding-block);
 }
 
 .why-choose-us .cards .card {
@@ -184,7 +193,7 @@ p {
 .why-choose-us .cards .card.two {
     background-color: #D0FAE5;
     border: 1px solid #a4f4cf;
-    margin: 0 2%;
+    margin-inline: 2%;
 }
 
 .why-choose-us .cards .card.two .square {
@@ -252,10 +261,14 @@ p {
     color: var(--secondary--text-color);
 }
 
-/* our members section */
+/* Our Members Section */
 
 .our-members {
     background-color: var(--secondary-background-color);
+    padding-block: var(--padding-block-lg);
+}
+
+.our-members .cards {
     padding-block: var(--padding-block);
 }
 
@@ -273,7 +286,7 @@ p {
 }
 
 .our-members .cards .card.two {
-    margin: 0 2%;
+    margin-inline: 2%;
     background-color: #ecfdf5;
     border: 1px solid #a4f4cf;
 }
@@ -308,7 +321,7 @@ p {
 
 .our-members .cards .card .header .data p {
     margin-block: 0;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 28px;
 }
 
@@ -319,7 +332,6 @@ p {
 .our-members .statistic {
     background-color: #F1F5F9;
     border-radius: 15px;
-    margin-top: 50px;
     padding: 30px;
     text-align: center;
 }
@@ -339,10 +351,10 @@ p {
     line-height: 24px;
 }
 
-/* join section  */
+/* Join Section  */
 
 .join {
-    padding-block: var(--padding-block);
+    padding-block: var(--padding-block-lg);
 }
 
 .join .title p {
@@ -387,11 +399,15 @@ p {
     width: 49%;
 }
 
+.join textarea {
+    min-height: 120px;
+}
+
 .join button {
     background-color: black;
     color: white;
     width: 100%;
-    padding: 15px;
+    padding: 16px;
     border: none;
     border-radius: 10px;
     font-size: 20px;
@@ -407,10 +423,11 @@ p {
     line-height: 20px;
 }
 
-/* footer */
+/* Footer Section */
+
 footer {
     background-color: #101828;
-    padding-block: var(--padding-block);
+    padding-block: var(--padding-block-lg);
 }
 
 footer p,
@@ -465,17 +482,17 @@ footer .right-content h4 {
     font-weight: var(--font-weight-medium);
 }
 
-footer .right-content .quik {
+footer .right-content .quick {
     width: 49%;
     float: left;
 }
 
-footer .right-content .quik ul {
+footer .right-content .quick ul {
     padding: 0;
     list-style: none;
 }
 
-footer .right-content .quik ul li {
+footer .right-content .quick ul li {
     margin-block: 15px;
 }
 
@@ -491,8 +508,7 @@ footer .copy {
 }
 
 footer .copy p {
-    /* 34an rule fok direct 3la p lhn hena inherent mn copy fmsh ht4t8l ela kda */
-     color: #6a7282;
+    color: #6a7282;
     float: left;
     width: auto;
 }
@@ -503,7 +519,7 @@ footer .copy .policy {
 }
 
 footer .copy .policy span {
-     color: #6a7282; 
+    color: #6a7282;
     margin-inline-end: 15px;
     font-size: 14px;
     line-height: 20px;

@@ -1,0 +1,168 @@
+/* @media screen and (max-width:1200px) {
+    .hero .image img {
+  width: 336px;
+    height: 336px;
+}
+} */
+@media screen and (max-width:992px) {
+
+
+
+
+    /* Hero Section  */
+    .hero {
+        padding-block: var(--padding-block-md);
+    }
+
+    .hero .content,
+    .hero .image {
+        display: block;
+    }
+
+    .hero .content {
+        width: 100%;
+    }
+
+    .hero .content h1 {
+        width: 500px;
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .hero .content p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .hero .content .btns button {
+        width: 48%;
+        margin-inline-end: 5px;
+        padding-inline: 24px;
+        padding-block: 12px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: var(--font-weight-medium);
+        line-height: 24px;
+        border: none;
+    }
+
+    .hero .image {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .hero .image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    /* Why Choose Us Section */
+
+    .why-choose-us .cards .card {
+        float: none;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .why-choose-us .cards .card.two {
+        margin-inline: 0;
+    }
+
+
+    .why-choose-us .feature .image,
+    .why-choose-us .feature .content {
+        width: 100%;
+        float: none;
+    }
+
+    .why-choose-us .feature .content {
+
+        margin-top: 32px;
+    }
+
+    /* Our Members Section  */
+
+    .our-members .cards .card {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 32px;
+    }
+
+    .our-members .cards .card.two {
+        margin-inline: 0;
+    }
+
+    .our-members .statistic div {
+        width: 50%;
+    }
+
+    /* Join Section  */
+
+    .join .title p {
+        width: 100%;
+    }
+
+    .join .form {
+        width: 100%;
+    }
+
+    .join label {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .join input,
+    .join select,
+    .join textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .join .first-name,
+    .join .last-name {
+        float: none;
+        width: 100%;
+    }
+
+    .join button {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 12px;
+    }
+
+    /* Footer Section */
+
+    footer .left-content,
+    footer .right-content,
+    footer .right-content .quik,
+    footer .right-content .contact {
+        width: 100%;
+        float: none;
+    }
+
+    footer .left-content {
+        padding-bottom: 32px;
+    }
+
+    footer .copy p ,
+footer .copy .policy {
+    text-align: center;
+float: none;
+width: 100%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .hero {
+        padding-block: var(--padding-block);
+    }
+
+    .hero .content h1 {
+        width: 350px;
+    }
+}
