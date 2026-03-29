@@ -37,7 +37,7 @@ fitcore-gym/
 ## Technologies Used
 
 - HTML5
-- CSS3 (Custom Properties, Flexbox)
+- CSS3 (Custom Properties, Float ayout)
 - Google Fonts — Roboto (400, 500, 700)
 
 ---
