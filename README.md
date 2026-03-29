@@ -1,4 +1,3 @@
-"# FitCore-Gym" 
 # FitCore Gym — Landing Page
 
 A responsive gym landing page built with pure HTML and CSS — no frameworks, no JavaScript.
